@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Digital Clock</h1>
+      <div class="controls">
+        <label>
+          <input type="checkbox" id="formatToggle" />
+          24-Hour Format
+        </label>
+        <button id="themeToggle">🌙</button>
+      </div>
+    </div>
+    <div class="clock">
+      <div id="time" class="time">--:--:--</div>
+      <div id="ampm" class="ampm"></div>
+      <div id="date" class="date">Loading date...</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
