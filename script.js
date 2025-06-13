@@ -29,13 +29,13 @@ function pad(n) {
   return n < 10 ? '0' + n : n;
 }
 
-// Format Toggle
+
 formatToggle.addEventListener('change', () => {
   use24Hour = formatToggle.checked;
   updateClock();
 });
 
-// Theme Toggle
+
 themeToggle.addEventListener('click', () => {
   document.body.classList.toggle('light');
   themeToggle.textContent = document.body.classList.contains('light') ? '☀️' : '🌙';
